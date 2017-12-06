@@ -1,0 +1,1019 @@
+{
+  "settings": {
+    "name": "Dusit AgencyM4",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "agencym4",
+      "title": "AgencyM4",
+      "styling": {
+        "primaryColor": "#4284DF",
+        "secondaryColor": "#F27D7A",
+        "successColor": "#9473D2",
+        "infoColor": "#7237A2",
+        "warningColor": "#F8F9C4",
+        "dangerColor": "#EFEFEF",
+        "mainFont": "Poppins",
+        "display1Font": "Poppins",
+        "display1Size": 4.25,
+        "display2Font": "Poppins",
+        "display2Size": 3,
+        "display5Font": "Poppins",
+        "display5Size": 1.5,
+        "display7Font": "Varela Round",
+        "display7Size": 1.06,
+        "display4Font": "Poppins",
+        "display4Size": 0.875,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": true
+      },
+      "additionalSetColors": []
+    },
+    "versionFirst": "4.5.2",
+    "uniqCompNum": 11,
+    "versionPublish": "4.5.2"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            ".navbar": {
+              "padding": ".5rem 0",
+              "background": "@menuBgColor",
+              "transition": "none",
+              "min-height": "50px"
+            },
+            ".navbar-dropdown.bg-color.transparent.opened": {
+              "background": "@menuBgColor"
+            },
+            "a": {
+              "font-style": "normal"
+            },
+            ".nav-item": {
+              "& span": {
+                "padding-right": "0.4em",
+                "line-height": "0.5em",
+                "vertical-align": "text-bottom",
+                "position": "relative",
+                "top": "-0.2em",
+                "text-decoration": "none"
+              },
+              "& a": {
+                "padding": "0.7rem 0 !important",
+                "margin": "0 .65rem !important"
+              }
+            },
+            ".dropdown-item:before": {
+              "font-family": "MobiriseIcons !important",
+              "content": "'\\e966'",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "transform": "scale(0, 1)",
+              "-webkit-transition": "all 0.25s ease-in-out",
+              "-moz-transition": "all 0.25s ease-in-out",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".content-text": {
+              "margin-bottom": "0"
+            },
+            ".navbar-nav": {
+              "position": "relative",
+              "min-height": "49px",
+              "@media (min-width: 992px)": {
+                ".main-menu-animated-line": {
+                  "position": "absolute",
+                  "left": "0",
+                  "width": "0",
+                  "height": "0",
+                  "z-index": "100",
+                  "border-top": "4px solid @primaryColor",
+                  "-webkit-transition": "width 0.4s, left 0.6s cubic-bezier(0.19, 0.65, 0.02, 0.93)",
+                  "-moz-transition": "width 0.4s, left 0.6s cubic-bezier(0.19, 0.65, 0.02, 0.93)",
+                  "transition": "width 0.4s, left 0.6s cubic-bezier(0.19, 0.65, 0.02, 0.93)",
+                  "&.bottom": {
+                    "bottom": "0"
+                  }
+                }
+              },
+              ".nav-item span": {
+                "padding-right": "0"
+              },
+              ".nav-item a": {
+                "margin": "0 1.3rem !important"
+              },
+              "-ms-flex-direction": "row",
+              "flex-direction": "row"
+            },
+            ".display-4 > .mbr-iconfont": {
+              "font-size": "1.43em"
+            },
+            ".display-4 > .btn > .mbr-iconfont": {
+              "font-size": "1.43em"
+            },
+            ".nav-dropdown .dropdown-item": {
+              "font-weight": "400"
+            },
+            ".navbar-buttons.mbr-section-btn": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".nav-dropdown .link": {
+              "font-weight": "400"
+            },
+            ".menu .navbar-brand .logo-text-part": {
+              "vertical-align": "top"
+            },
+            ".content-right-side": {
+              "text-align": "center"
+            },
+            ".menu-content-top": {
+              "display": "none",
+              "padding": "0 2rem",
+              "align-items": "center",
+              "justify-content": "space-between",
+              "overflow": "hidden",
+              "transition": "min-height 0.25s ease-in-out"
+            },
+            ".content-right-side .content-link": {
+              "margin-left": "2rem",
+              "span": {
+                "vertical-align": "middle",
+                "padding-right": "1rem"
+              }
+            },
+            ".widget-icon": {
+              "display": "inline-block",
+              "padding-right": "1rem",
+              "font-size": "1.65rem"
+            },
+            ".info-widget": {
+              "padding-left": "2rem",
+              "padding-top": "0.5rem",
+              "padding-right": "3rem",
+              "border-left": "1px solid #e0e0e0"
+            },
+            ".menu-content-right": {
+              "display": "flex",
+              "align-items": "center",
+              ".info-widget:last-child": {
+                "padding-right": "0"
+              },
+              ".info-widget:first-child": {
+                "padding-left": "0",
+                "border-left": "none"
+              }
+            },
+            ".widget-content": {
+              "display": "inline-block",
+              "vertical-align": "top",
+              "text-align": "left",
+              ".widget-title": {
+                "font-weight": "600",
+                "margin-bottom": "7px"
+              },
+              ".widget-text": {
+                "margin-bottom": "0"
+              }
+            },
+            ".menu-bottom": {
+              "display": "flex",
+              "width": "100%",
+              "padding": "0 2rem",
+              "position": "relative",
+              "& when (@menuAlign = 'center')": {
+                "justify-content": "center"
+              },
+              "& when (@menuAlign = 'right')": {
+                "justify-content": "flex-end"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".navbar .menu-content-top": {
+                "display": "flex",
+                "min-height": "83px",
+                "height": "100%"
+              },
+              ".content-right-side": {
+                "text-align": "right",
+                "flex-wrap": "nowrap",
+                "display": "flex",
+                "align-items": "center"
+              },
+              ".menu-content-top": {
+                "border-bottom": "1px solid #e0e0e0"
+              },
+              ".navbar": {
+                "display": "block",
+                "padding": "0",
+                ".menu-logo": {
+                  "margin-right": "auto",
+                  "display": "flex",
+                  "align-items": "center"
+                }
+              },
+              ".navbar.navbar-toggleable-sm .navbar-collapse .navbar-nav .nav-item": {
+                "-webkit-align-self": "initial",
+                "align-self": "auto",
+                "display": "flex",
+                "align-items": "center",
+                "z-index": "101",
+                "min-height": "49px"
+              },
+              ".dropdown-item:hover:before": {
+                "transform": "scale(1, 1)",
+                "width": "16px"
+              },
+              ".navbar-toggler": {
+                "display": "none"
+              }
+            },
+            ".navbar-short .menu-content-top": {
+              "height": "0",
+              "min-height": "0",
+              "border": "none"
+            },
+            ".btn": {
+              "padding": "0.4rem 1.5rem",
+              ".mbr-iconfont": {
+                "font-size": "1.2em"
+              },
+              "display": "inline-flex",
+              "align-items": "center"
+            },
+            ".menu-logo": {
+              "margin-right": "auto",
+              ".navbar-brand": {
+                "display": "flex",
+                "margin-left": "1.5rem",
+                "padding": "0.5rem 0",
+                "transition": "padding .2s",
+                "min-height": "3.8rem",
+                "align-items": "center",
+                ".navbar-caption-wrap": {
+                  "display": "-webkit-flex",
+                  "-webkit-align-items": "center",
+                  "align-items": "center",
+                  "word-break": "break-word",
+                  "min-width": "7rem",
+                  "margin": ".3rem 0",
+                  ".navbar-caption": {
+                    "line-height": "1.2rem !important",
+                    "padding-right": "2rem"
+                  }
+                },
+                ".navbar-logo": {
+                  "font-size": "4rem",
+                  "transition": "font-size 0.25s",
+                  "& img": {
+                    "display": "flex"
+                  },
+                  ".mbr-iconfont": {
+                    "transition": "font-size 0.25s"
+                  }
+                }
+              }
+            },
+            ".navbar-toggleable-sm .navbar-collapse": {
+              "width": "auto",
+              ".navbar-nav": {
+                "flex-wrap": "wrap",
+                "-webkit-flex-wrap": "wrap",
+                "padding-left": "0",
+                ".nav-item": {
+                  "-webkit-align-self": "center",
+                  "align-self": "center"
+                }
+              },
+              ".navbar-buttons": {
+                "padding-left": "0",
+                "padding-bottom": "0"
+              }
+            },
+            ".dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                "display": "none",
+                "position": "absolute",
+                "min-width": "5rem",
+                "padding-top": "1.4rem",
+                "padding-bottom": "1.4rem",
+                "text-align": "left",
+                ".dropdown-item": {
+                  "width": "auto",
+                  "padding": "0.235em 2.5385em 0.235em 3.5385em !important",
+                  "-webkit-transition": "all 0.25s ease-in-out",
+                  "-moz-transition": "all 0.25s ease-in-out",
+                  "transition": "all 0.25s ease-in-out",
+                  "&::after": {
+                    "right": "0.5rem"
+                  },
+                  "&:hover": {
+                    ".mbr-iconfont:before": {
+                      "transform": "scale(0, 1)"
+                    }
+                  },
+                  ".mbr-iconfont": {
+                    "margin-left": "-1.8rem",
+                    "padding-right": "1rem",
+                    "font-size": "inherit",
+                    "&:before": {
+                      "display": "inline-block",
+                      "transform": "scale(1, 1)",
+                      "-webkit-transition": "all 0.25s ease-in-out",
+                      "-moz-transition": "all 0.25s ease-in-out",
+                      "transition": "all 0.25s ease-in-out"
+                    }
+                  }
+                },
+                ".dropdown-submenu": {
+                  "margin": "0"
+                }
+              },
+              "&.open > .dropdown-menu": {
+                "display": "block"
+              }
+            },
+            ".navbar-toggleable-sm": {
+              "&.opened:after": {
+                "position": "absolute",
+                "width": "100vw",
+                "height": "100vh",
+                "content": "''",
+                "background-color": "rgba(0, 0, 0, 0.1)",
+                "left": "0",
+                "bottom": "0",
+                "transform": "translateY(100%)",
+                "-webkit-transform": "translateY(100%)",
+                "z-index": "1000"
+              }
+            },
+            ".navbar.navbar-short": {
+              "min-height": "50px",
+              "transition": "all .2s",
+              "& .navbar-logo a": {
+                "font-size": "2.5rem !important",
+                "line-height": "2.5rem",
+                "transition": "font-size 0.25s",
+                "& .mbr-iconfont": {
+                  "font-size": "2.5rem !important"
+                },
+                "& img": {
+                  "height": "3rem !important"
+                }
+              },
+              "& .navbar-brand": {
+                "min-height": "3rem"
+              }
+            },
+            "button.navbar-toggler": {
+              "width": "31px",
+              "height": "18px",
+              "cursor": "pointer",
+              "transition": "all .2s",
+              "margin": "1rem .8rem",
+              "align-self": "center",
+              "&:focus": {
+                "outline": "none"
+              },
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              },
+              "&:nth-child(2)": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(3)": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              },
+              ".btn": {
+                "display": "flex"
+              },
+              ".navbar-collapse": {
+                "display": "none !important",
+                "padding-right": "0 !important",
+                "&.collapsing,&.show": {
+                  "display": "block !important",
+                  ".navbar-nav": {
+                    "display": "block",
+                    "text-align": "center",
+                    ".nav-item": {
+                      "clear": "both",
+                      "& when (@showButtons = false)": {
+                        "&:last-child": {
+                          "margin-bottom": "1rem"
+                        }
+                      }
+                    }
+                  },
+                  ".navbar-buttons": {
+                    "display": "flex",
+                    "justify-content": "center",
+                    "text-align": "center",
+                    "&:last-child": {
+                      "margin-bottom": "1rem"
+                    }
+                  }
+                }
+              },
+              "button.navbar-toggler": {
+                "display": "block"
+              },
+              ".navbar-brand": {
+                "margin-left": "1rem !important",
+                "margin-top": ".5rem"
+              },
+              ".navbar-toggleable-sm": {
+                "flex-direction": "column",
+                "-webkit-flex-direction": "column"
+              },
+              ".dropdown": {
+                ".dropdown-menu": {
+                  "width": "100%",
+                  "text-align": "center",
+                  "position": "relative",
+                  "opacity": "0",
+                  "display": "block",
+                  "height": "0",
+                  "visibility": "hidden",
+                  "padding": "0",
+                  "transition-duration": ".5s",
+                  "transition-property": "opacity,padding,height"
+                },
+                "&.open > .dropdown-menu": {
+                  "position": "relative",
+                  "opacity": "1",
+                  "height": "auto",
+                  "padding": "1.4rem 0",
+                  "visibility": "visible"
+                },
+                ".dropdown-submenu": {
+                  "left": "0",
+                  "text-align": "center",
+                  "width": "100%"
+                },
+                ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]::after": {
+                  "margin-top": "0",
+                  "position": "inherit",
+                  "right": "0",
+                  "top": "50%",
+                  "display": "inline-block",
+                  "width": "0",
+                  "height": "0",
+                  "margin-left": ".3em",
+                  "vertical-align": "middle",
+                  "content": "\"\"",
+                  "border-top": ".30em solid",
+                  "border-right": ".30em solid transparent",
+                  "border-left": ".30em solid transparent"
+                }
+              },
+              ".menu-bottom": {
+                "flex-direction": "column-reverse",
+                "justify-content": "center"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".menu-bottom": {
+                "flex-direction": "column-reverse",
+                "justify-content": "center"
+              },
+              "img": {
+                "height": "3.8rem !important"
+              },
+              ".btn": {
+                "display": "flex"
+              },
+              "button.navbar-toggler": {
+                "display": "block"
+              },
+              ".navbar-brand": {
+                "margin-left": "1rem !important",
+                "margin-top": ".5rem"
+              },
+              ".navbar-toggleable-sm": {
+                "flex-direction": "column",
+                "-webkit-flex-direction": "column"
+              },
+              ".navbar-collapse": {
+                "display": "none !important",
+                "padding-right": "0 !important",
+                "&.collapsing,&.show": {
+                  "display": "block !important",
+                  ".navbar-nav": {
+                    "display": "block",
+                    "text-align": "center",
+                    ".nav-item": {
+                      "clear": "both",
+                      "& when (@showButtons = false)": {
+                        "&:last-child": {
+                          "margin-bottom": "1rem"
+                        }
+                      }
+                    }
+                  },
+                  ".navbar-buttons": {
+                    "display": "flex",
+                    "justify-content": "center",
+                    "text-align": "center",
+                    "&:last-child": {
+                      "margin-bottom": "1rem"
+                    }
+                  }
+                }
+              },
+              ".dropdown": {
+                ".dropdown-menu": {
+                  "width": "100%",
+                  "text-align": "center",
+                  "position": "relative",
+                  "opacity": "0",
+                  "display": "block",
+                  "height": "0",
+                  "visibility": "hidden",
+                  "padding": "0",
+                  "transition-duration": ".5s",
+                  "transition-property": "opacity,padding,height"
+                },
+                "&.open > .dropdown-menu": {
+                  "position": "relative",
+                  "opacity": "1",
+                  "height": "auto",
+                  "padding": "1.4rem 0",
+                  "visibility": "visible"
+                },
+                ".dropdown-submenu": {
+                  "left": "0",
+                  "text-align": "center",
+                  "width": "100%"
+                },
+                ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]::after": {
+                  "margin-top": "0",
+                  "position": "inherit",
+                  "right": "0",
+                  "top": "50%",
+                  "display": "inline-block",
+                  "width": "0",
+                  "height": "0",
+                  "margin-left": ".3em",
+                  "vertical-align": "middle",
+                  "content": "\"\"",
+                  "border-top": ".30em solid",
+                  "border-right": ".30em solid transparent",
+                  "border-left": ".30em solid transparent"
+                }
+              },
+              ".navbar-buttons.mbr-section-btn": {
+                "width": "100%"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".navbar-dropdown": {
+              "flex-wrap": "nowrap"
+            },
+            ".navbar-collapse": {
+              "-ms-flex-preferred-size": "auto",
+              "flex-basis": "auto"
+            },
+            ".nav-link:focus": {
+              "outline": "none"
+            },
+            ".navbar-toggler": {
+              "position": "relative"
+            },
+            ".dropdown-item.active,.dropdown-item:active": {
+              "background": "@menuBgColor",
+              "color": "initial"
+            },
+            ".nav-link:hover, .dropdown-item:hover": {
+              "color": "@itemsHoverColor"
+            }
+          },
+          "_name": "menu2",
+          "_customHTML": "<section class=\"menu\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3.8\" max=\"8\" step=\"0.1\" value=\"3.8\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked>\n        <select title=\"Widget Count\" name=\"widgetCount\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <select title=\"Menu align\" name=\"menuAlign\">\n            <option value=\"left\">Left</option>\n            <option value=\"center\" selected>Center</option>\n            <option value=\"right\">Right</option>\n        </select>\n        <input type=\"color\" title=\"Items Hover Color\" name=\"itemsHoverColor\" value=\"#4284df\">\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#333333\">\n        <input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#f8f9c4\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <nav class=\"navbar navbar-dropdown align-items-center\" mbr-class=\"{'navbar-fixed-top': sticky,\n        'navbar-toggleable-sm': !collapsed,\n        'collapsed': collapsed,\n        'bg-color transparent': transparent}\">\n        <div class=\"menu-content-top\">\n            <div class=\"menu-logo\">\n                <div class=\"navbar-brand\">\n                    <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                        <a href=\"https://mobirise.com\">\n                            <img src=\"../_images/logo2.png\" alt=\"Mobirise\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                        </a>\n                    </span>\n                    <span mbr-if=\"showBrand\" mbr-theme-style=\"display-5\" mbr-buttons class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a href=\"https://mobirise.com\" class=\"brand-link mbr-black\" data-app-selector=\".brand-link\">Dusit Thani</a></span>\n                </div>\n            </div>\n            <div class=\"menu-content-right\">\n                <div class=\"info-widget\">\n                    <span mbr-icon class=\"widget-icon mbri-mobile2 mbr-iconfont\"></span>\n                    <div class=\"widget-content\" mbr-theme-style=\"display-4\">\n                        <p class=\"widget-title mbr-fonts-style\" data-app-selector=\".widget-title, .widget-icon\" mbr-theme-style=\"display-4\">+ (123) 1800-567-8990</p>\n                        <p class=\"widget-text mbr-fonts-style\" data-app-selector=\".widget-text\" mbr-theme-style=\"display-4\">+ (123) 1800-567-8990</p>\n                    </div>\n                </div>\n                <div class=\"info-widget\" mbr-if=\"widgetCount > 1\">\n                    <span mbr-icon class=\"widget-icon mbri-clock mbr-iconfont\"></span>\n                    <div class=\"widget-content\" mbr-theme-style=\"display-4\">\n                        <p class=\"widget-title mbr-fonts-style\" data-app-selector=\".widget-title, .widget-icon\" mbr-theme-style=\"display-4\">Mon - Fri: 9:00AM - 5:00PM</p>\n                        <p class=\"widget-text mbr-fonts-style\" data-app-selector=\".widget-text\" mbr-theme-style=\"display-4\">Sat - Sun: Closed</p>\n                    </div>\n                </div>\n                <div class=\"info-widget\" mbr-if=\"widgetCount > 2\">\n                    <span mbr-icon class=\"widget-icon mbri-letter mbr-iconfont\"></span>\n                    <div class=\"widget-content mbr-fonts-style\">\n                        <p class=\"widget-title\" data-app-selector=\".widget-title, .widget-icon\" mbr-theme-style=\"display-4\">office@example.com</p>\n                        <p class=\"widget-text mbr-fonts-style\" data-app-selector=\".widget-text\" mbr-theme-style=\"display-4\">info@medical.com</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"menu-bottom\">\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                <ul mbr-menu class=\"navbar-nav nav-dropdown js-float-line\" mbr-theme-style=\"display-4\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\">\n                        <a class=\"nav-link link mbr-black\" href=\"index.html#tabs2-a\" data-app-selector=\".nav-link,.dropdown-item\">Şartnameler</a>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link link mbr-black\" href=\"index.html#tabs2-6\" data-app-selector=\".nav-link,.dropdown-item\">Şartnameler 2<br></a>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link link mbr-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">Projeler.PDF</a>\n                    </li>\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link link mbr-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">Görseller</a>\n                    </li></ul>\n                <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-sm btn-primary\" href=\"https://trello.com/b/ikVu0yf3/dusitthani\" target=\"_blank\"><span class=\"fa fa-trello mbr-iconfont mbr-iconfont-btn\"></span>\n                    TRELLO</a></div>\n            </div>\n            <button class=\"navbar-toggler \" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n        </div>\n    </nav>\n</section>",
+          "_cid": "qD1aEl2VCI",
+          "_anchor": "menu2-0",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle": {
+              "font-weight": "300"
+            },
+            ".card": {
+              "word-wrap": "break-word"
+            },
+            ".card:after": {
+              "content": "\"\"",
+              "display": "block",
+              "width": "150px",
+              "height": "3px",
+              "margin": "0 auto",
+              "background-color": "@primaryColor"
+            },
+            ".mbr-iconfont": {
+              "font-size": "5rem",
+              "color": "@primaryColor"
+            }
+          },
+          "_name": "counters1",
+          "_customHTML": "<section class=\"counters1 counters\" group=\"Counters\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <!-- Paddings -->\n        <input type=\"range\" title=\"Padding Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" title=\"Padding Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <!-- Elements params -->\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n\n        <input type=\"checkbox\" title=\"Show Block Title\" name=\"showTitles\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n\n        <select title=\"Cards Count\" name=\"cardsAmount\">\n           <option value=\"1\">1</option>\n           <option value=\"2\">2</option>\n           <option value=\"3\" selected>3</option>\n           <option value=\"4\">4</option>\n        </select>\n\n        <!-- Backgrounds -->\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#04367c\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container mbr-white\">\n        <h2 class=\"mbr-section-title pb-3 mbr-semibold align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Get to know us better</h2>\n        <h3 class=\"mbr-section-subtitle mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Mobirise is a beautiful site constructor</h3>\n\n        <div class=\"container pt-4 mt-2\">\n            <div class=\"media-container-row\">\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item p-3\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-mobirise mbr-iconfont\"></span>\n                        </div>\n\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".count\">\n                                  178</h3>\n                            <h4 class=\"mbr-content-title mbr-semibold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\">Oda</h4>\n                            <p class=\"mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequatur cumque eos hic inventore omnis perferendis qui quidem suscipit.</p>\n                        </div>\n                    </div>\n                </div>\n\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>1\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item p-3\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-touch-swipe mbr-iconfont\"></span>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".count\">\n                                  41</h3>\n                            <h4 class=\"mbr-content-title mbr-semibold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\">Kat</h4>\n                            <p class=\"display-7 mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequatur cumque eos hic inventore omnis perferendis qui quidem suscipit.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>2\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item p-3\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-responsive mbr-iconfont\"></span>\n                        </div>\n                        <div class=\"card-text\">\n                            <h3 class=\"count pt-3 pb-3 mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".count\">\n                                  7\n                            </h3>\n                            <h4 class=\"mbr-content-title mbr-semibold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\">Bodrum</h4>\n                            <p class=\"display-7 mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequatur cumque eos hic inventore omnis perferendis qui quidem suscipit.</p>\n                        </div>\n                    </div>\n                </div>\n\n\n                <div class=\"card p-3 align-center col-12 col-md-6\" mbr-if=\"cardsAmount>3\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3'}\">\n                    <div class=\"panel-item p-3\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-hot-cup mbr-iconfont\"></span>\n                        </div>\n\n                        <div class=\"card-texts\">\n                             <h3 class=\"count pt-3 pb-3 mbr-semibold mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".count\">\n                                  407\n                            </h3>\n                            <h4 class=\"mbr-content-title mbr-semibold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\">Solutions</h4>\n                            <p class=\"display-7 mbr-content-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-content-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consequatur cumque eos hic inventore omnis perferendis qui quidem suscipit.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n   </div>\n</section>",
+          "_cid": "qD1lvEb0gV",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "counters1-8"
+        },
+        {
+          "_name": "tabs2",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "font-weight": "bold",
+              "color": "#232323",
+              "margin-bottom": "2.5rem"
+            },
+            ".mbr-section-subtitle": {
+              "font-weight": "500",
+              "margin-bottom": "2rem"
+            },
+            ".mbr-element-title": {
+              "margin-bottom": "1rem"
+            },
+            ".card-img": {
+              "margin-top": "1.5rem",
+              "margin-bottom": "1.5rem",
+              "span": {
+                "font-size": "(@iconSize * 1px)"
+              }
+            },
+            ".nav": {
+              "border": "none",
+              "margin-bottom": "3rem"
+            },
+            ".nav-tabs": {
+              "margin-top": "1rem",
+              "margin-bottom": "2rem",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".tabcont": {
+              "z-index": "1",
+              "margin": "0"
+            },
+            ".nav-item": {
+              "margin-top": "1rem"
+            },
+            ".tab-content-row": {
+              "width": "100%",
+              "justify-content": "center",
+              "margin": "0"
+            },
+            ".tab-content": {
+              "width": "100%"
+            },
+            ".tab-elem": {
+              "flex-basis": "auto !important"
+            },
+            ".nav-tabs .nav-link": {
+              "box-sizing": "border-box",
+              "font-style": "normal",
+              "font-weight": "bold",
+              "padding": "1rem 1rem",
+              "margin": "0px",
+              "margin-left": "-0.5px",
+              "margin-right": "-0.5px",
+              "transition": "all .5s",
+              "border-bottom-left-radius": "0px !important",
+              "border-bottom-right-radius": "0px !important",
+              "border-top-left-radius": "5px !important",
+              "border-top-right-radius": "5px !important",
+              "border-bottom": "1px solid @tabsColor",
+              "&:hover": {
+                "border-color": "transparent",
+                "border-bottom": "1px solid @tabsColor"
+              },
+              "&.active": {
+                "border": "1px solid @tabsColor",
+                "border-bottom": "none",
+                "font-style": "normal",
+                "background-color": "transparent"
+              }
+            },
+            ".mbr-section-text": {
+              "text-align": "left"
+            }
+          },
+          "_customHTML": "<section class=\"tabs2\" group=\"Accordion & Toggles & Tabs\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showHeader\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"range\" inline title=\"Icon Size\" name=\"iconSize\" min=\"20\" max=\"100\" step=\"2\" value=\"80\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Titles\" name=\"showTitles\" checked>\n        <input type=\"color\" title=\"Tabs Color\" name=\"tabsColor\" value=\"#767676\">\n        <!-- <input type=\"color\" title=\"Active Tab Color\" name=\"activeTabColor\" value=\"#ffffff\"> -->\n        <select title=\"Tabs Count\" name=\"tabsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <select title=\"Columns in Tabs\" name=\"columnsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/01.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=l8UXhtqV6hU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showHeader\" data-app-selector=\".mbr-section-title\">Dusit Thani Şartnameler</h2>\n        <h3 class=\"mbr-section-subtitle  display-5 align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPICISING ELIT.<br>\n        </h3>\n    </div>\n    <div class=\"media-container-row\">    \n        <div class=\"row tabcont\">\n                <ul class=\"nav nav-tabs\" role=\"tablist\">\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab1\" aria-expanded=\"true\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">SORTIE</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 1\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab2\" aria-expanded=\"false\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">OUR PRINCIPLES</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 2\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab3\" aria-expanded=\"false\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">FIRM PROFILE</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 3\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab4\" aria-expanded=\"false\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">HOW WE WORK</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 4\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab5\" aria-expanded=\"true\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">MAKE A PAYMENT</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 5\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab6\" aria-expanded=\"true\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">OUR WARRANTY</h4>\n                        </a>\n                    </li>\n                </ul>\n        </div>\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row px-1 justify-content-center\">\n            <div class=\"tab-content\">\n                <div id=\"tab1\" class=\"tab-pane in active mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-like mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">SECTION 26 05 10\n<br>\n<br>Basic Materials and Methods For Electrical Installation\n<br>PART 1\tGENERAL \n<br>A.\tIn this specification, General properties for Materials used in the construction of installations of Standards and conditions for the construction, manufacture, installation and testing of low / weak current installations to be installed inside and outside the building are explained.\n<br>B.\tOutlet : a point on a wiring system at which current is taken to supply electric devices. Its shows as a “sorti” in boq pages.\n<br>\n<br>PART 2\t  PRODUCT\n<br>2.1\tOUTLET DEFINITIONS:\n<br>A.\tAll lighting and socket outlets will be safety lined.\n<br>B.\tInside the apartment, cable installation should be at least 2.5 mm2 H07Z-U will be made according to the projects show drawings and panel schedules. There is no maximum size for outlets. (T.C. ÇEVRE ve ŞEHİRCİLİK BAKANLIĞI outlet definitions will not apply.)\n<br>C.\tOutlets cables shall be provided with NHXMH type with a cross section of at least 2.5 mm2, There is no maximum size for outlets. (T.C. ÇEVRE ve ŞEHİRCİLİK BAKANLIĞI outlet definitions will not apply.) Halogen free pipes to be used for outlets And accessories are included in the outlets unit prices. \n<br>D.\tSwitches and sockets shall not be in the definition of outlets, they shall also be priced. \n<br>E.\t1.5mm² cable will not be used in lighting outlets. The minimum cross section is 2.5mm².\n<br>2.2\tNORMAL LIGHTING OUTLETS:\n<br>A.\tControlled by normal (one gang one way) switch. All the conduits, cables, accessories and workmanship are inculeded from the electrical panel board to swich and first lighting fixtures if more then one lighting fixtures included in one normal outlets; all others shall be priced as a parallel outlets.\n<br>2.3\tCOMMUTATOR LIGHTING SORTING:\n<br>2.4\tControlled by commutator (one gang one way) switch. All the conduits, cables, accessories and workmanship are inculeded from the electrical panel board to swich and first two lighting fixtures if more then two lighting fixtures included in one commutator outlets; all others shall be priced as a parallel outlets.\n<br>2.5\tVAEVIEN LIGHTING SORTING: \n<br>A.\tIn the lighting sortings controlled by Vaevien switches; Pipes, cables, accessories and workmanship, from panels to switches and from key to first armatüre And other sorties will be accepted as parallel illumination sort. \n<br>2.6\tMANUAL DIMMER SORT: \n<br>A.\tIn the lighting sort controlled by manual dimmer; from the clipboard Pipe, cable, accessories and workmanship to be made from the key and key to the first armatüre Dimmer lighting sorting, other sorting will be accepted as parallel lighting sorting. \n<br>2.7\tLIGHTING SORT CONTROLLED BY PULSE CURRENT SWITCH: \n<br>A.\tThe first board and panel board Pipe, cable, accessories and workmanship pulse current switch lighting sorting to be done to buttons, other Sorties will be accepted as parallel lighting sort. Pulse current shaver panoda It will be priced. \n<br>2.8\tKeyless normal lighting sorting:\n<br>A.\tIn the lighting sorting controlled by the paneling; from the clipboard Pipe, cable, accessory and workmanship keyless lighting sort to be done as the first armature, other Sorties will be accepted as parallel lighting sort.\n<br>2.9\tSOCKETS SORTIE\n<br>A.\tThe socket outlets shall be made with at least 3x2.5 mm2 cables through the pipe.\n<br>B.\tSwitches and outlets shall not be in the definition of sorties, they shall also be priced.\n<br>C.\tIf the receptacle is ordered from the cable shelf up to the first prize, at least 3x2.5 mm2 cables Installation will be made through the pipe up to the prize and at the cable shelf outlet. At subsequent parallel sockets The sorti lines through the pipe shall be made with cables at least 3x2.5 mm2. Parallel socket outlet socket Behind, non-flammable bucket, screwless plug-in type terminal blocks and all Accessories will be included. \n<br>D.\tEach single-phase sockets, supply cables, pipes and accessories, workmanship and so on. A security line socket Sorting will be accepted. The outlets will not be evaluated in the sortie definition, It will be priced. Multiple sockets in the same case or sockets on the desk block\n<br>E.\tIt will be considered as all socket sorting in the boq. All outlet sorts in the same group will be counted as one. Ex : twin socket , triple socket, universal socket etc. \n<br><b><i>PART 3\t     EXECUTION\n<br>3.1\tINSTALLATION OF OUTLET BOXES\n</i></b><br>A.\tLocation of Boxes \n<br>1.\tDetermine exact location of boxes on site and obtain the Engineer's approval before commencing installation.\n<br>2.\tMake allowance for overhead pipes, ducts, variations in arrangement, thickness of finish, window trim, panelling and other construction while locating boxes.\n<br>B.\tMounting Heights\n<br>1.\tMount boxes as indicated or as approved by the Engineer.\n<br>2.\tWhere mounting height is not shown or specified, obtain instructions.\n<br>3.\tBoxes for similar equipment : mount at uniform heights within same or similar areas.\n<br>C.\tFixing\n<br>1.\tFix outlet boxes securely.\n<br>2.\tFix exposed outlet boxes to permanent inserts or lead anchors with machine screws. .<br><b><i>3.2\tINSTALLATION OF SWITCHES\n</i><br></b>A.\tLighting switches near door:\n<br>1.\tLocated at the strike side of the door.\n<br>2.\tPlates shall be installed with all four edges in continuous contact with finished wall.\n<br>3.\tPlates shall be installed with an alignment tolerance of 1.5mm.\n<br>4.\tAll switch assembly grid plates shall have their earthing terminal connected to the earth terminal attached to the switch box by an insulated 2.5 sq.mm protective conductor.\n<br>3.3\tINSTALLATION OF JUNCTION, PULL AND TERMINAL BOXES\n<br>A.\tGenerally\n<br>1.\tFix junction, pull and terminal boxes where indicated and where required to facilities pulling of wires and cables and connection of future appliances.\n<br>2.\tLocate boxes as inconspicuously as possible, but accessible after work is completed.\n<br>B.\tPull Boxes\n<br>1.\tFix at maximum 10m spacing and to limit the number of bends in conduit to not be more than two 90°.\n<br><b><i>3.4\tTESTING\n</i></b><br>A.\tTest all switches, socket outlets etc. for correct polarity and continuity of conductors in the presence of and to the entire satisfaction of the Engineer.\n<br>B.\tCarry out live phase to earth loop impedance tests at all switches and socket outlets with an approved earth loop impedance tester to the entire satisfaction of the Engineer. Ensure that all device plate have satisfactory earth continuity to the protective conductor system.\n<br>\n<br>END OF SECTION&nbsp;<br></p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-like mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">BÖLÜM 26 05 10\n<br>\n<br>Elektrik Tesisatında Temel Malzemeler ve Yöntemler\n<br>BÖLÜM 1 GENEL\n<br>A. Bu şartnamede, Standartların kurulumunun yapımında kullanılan Malzemelerin Genel Özellikleri ve binanın içinde ve dışında kurulacak düşük / zayıf akım tesisatlarının yapımı, imalatı, kurulumu ve test koşulları açıklanmaktadır.\n<br>B. Outlet: elektrik tesisatlarını beslemek için akımın alındığı bir kablolama sistemi üzerindeki bir nokta. Boq sayfalarında \"sorti\" olarak gösterileri.\n<br>\n<br>BÖLÜM 2 ÜRÜN\n<br>2.1 ÇIKIŞ TANIMLARI:\n<br>C. Bütün aydınlatma ve prizler emniyetli olacaktır.\n<br>B. Daire içerisinde, kablo döşenmesi en az 2.5 mm2 olmalıdır. H07Z-U, projelere göre çizimleri ve pano çizelgelerini gösterecek şekilde yapılacaktır. Satış mağazaları için maksimum boyut yoktur. (Ç.Ç. ÇEVRE ve ŞEHİRCİLİK BAKANLIĞI çıkış tanımları geçerli değildir.)\n<br>C. Çıkış kabloları, en az 2.5 mm2 kesit alana sahip NHXMH tipi ile donatılmalıdır, Çıkışlar için maksimum boyut yoktur. (T.C. ÇEVRE ve ŞEHİRCİLİK BAKANLIĞI çıkış tanımlamaları geçerli olmayacaktır.) Çıkışlar için kullanılacak halojensiz borular ve aksesuar satış birim fiyatlarına dahildir.\n<br>D. Anahtarlar ve prizler prizlerin tanımında olmayacak, ayrıca fiyatlandırılacaktır.\n<br>Aydınlatma çıkışlarında E. 1.5mm² kablo kullanılamaz. Minimum kesit 2.5mm²'dir.\n<br>2.2 NORMAL AYDINLATMA AÇIKLAMALARI:\n<br>A. normal (bir çete tek yönlü) anahtarı ile kontrol edilir. Tüm prizler, kablolar, aksesuarlar ve işçilik elektrikli pano tahtasından bir normal çıkışa birden fazla aydınlatma armatürü takılıysa swich ve ilk aydınlatma armatürlerine konulmuştur; diğerlerinin hepsi paralel çıkış olarak fiyatlandırılacaktır.\n<br>2.3 KOMÜTATÖR AYDINLATMA SIRALAMASI:\n<br>2.4 Komütatör tarafından kontrol edilir (bir çete tek yönlü) anahtarı. Tüm elektrik hatları, kablolar, aksesuarlar ve işçilik, bir komütatör çıkışında birden fazla aydınlatma armatürü varsa elektrik panosundan swich'e ve ilk iki aydınlatma armatürüne konulmuştur; diğerlerinin hepsi paralel çıkış olarak fiyatlandırılacaktır.\n<br>2.5 VAEVIEN AYDINLATMA SIRALAMASI:\n<br>A. Vaevien anahtarları tarafından kontrol edilen aydınlatma sınıflandırmalarında; Borular, kablolar, aksesuarlar ve işçilik, panolardan anahtarlara ve anahtardan ilk armatüre ve diğer sıralamalardan paralel aydınlatma sınıfı olarak kabul edilecek.\n<br>2.6 MANUEL DIMMER SIRALAMA:\n<br>A. Manuel dimmer ile kontrol edilen aydınlatma sınıfında; panodan Boru, kablo, aksesuar ve işçiliğin anahtar ve anahtarlardan ilk armatüre yapılması Dimmer aydınlatma sıralama, diğer sıralama paralel aydınlatma sıralama olarak kabul edilecek.\n<br>2.7 PULSE CURRENT SWITCH İLE AYDINLATMA SIRASI KONTROL EDİLMİŞTİR:\n<br>A. İlk kurul ve panel tahtası Boru, kablo, aksesuarlar ve işçilik darbeli akım şalteri aydınlatma düğmelerine yapılacak sıralama, diğer Sorties paralel aydınlatma tipi olarak kabul edilecektir. Darbeli tıraş panosu Fiyatlandırılacaktır.\n<br>2.8 Anahtarsız normal aydınlatma sıralama:\n<br>Panelleme ile kontrol edilen aydınlatma sınıflandırmasında; panodan Boru, kablo, aksesuar ve işçiliğin anahtarsız aydınlatma türü olarak ilk armatür olarak yapılacak, diğer Sorties paralel aydınlatma türü olarak kabul edilecek.\n<br>2.9 SOKETLER SORU\n<br>A. Soket çıkışları borudan en az 3x2.5 mm2 kablo ile yapılacaktır.\n<br>B. Anahtarlar ve çıkışlar sortiler tanımında olmaz, fiyatlandırılacaktır.\n<br>C. Kablo, kablo rafından birinciye kadar sipariş ediliyorsa, en az 3x2.5 mm2 kablo Kablo rafı prizine kadar borudan monte edilecektir. Sonraki paralel soketlerde Boru içinden geçen hatlar en az 3x2.5 mm2 kablo ile yapılacaktır. Paralel soket çıkış soketi Yanıcı olmayan yanıcı kova, vidasız soketli tip klemensler ve tüm Aksesuarlar dahil edilecektir.\n<br>D. Her bir tek fazlı priz, besleme kabloları, boru ve aksesuarları, işçilik vb. Bir güvenlik hattı yuvası Sıralama kabul edilecektir. Çıkışlar sorti tanımında değerlendirilmeyecektir, fiyatlandırılacaktır. Aynı kutudaki çoklu soketler veya masa bloğundaki soketler\n<br>E. Boq'da tüm soket sıralaması olarak kabul edilecektir. Aynı gruptaki tüm çıkış çeşitleri biri olarak sayılır. Ör: ikiz soket, üçlü soket, üniversal soket vs.\n<br>BÖLÜM 3 İCRA\n<br>3.1 ÇIKIŞ KUTULARININ KURULUMU\n<br>A. Kutuların Konumu\n<br>1. Yerinde kutuların tam yerini belirleyin ve kurulum başlamadan önce Mühendis onaylayın.\n<br>2. Kutuları yerleştirirken havai borular, kanallar, düzenleme değişiklikleri, finiş kalınlığı, pencere döşeme, panelleme ve diğer konstrüksiyon için izin verin.\n<br>B. Montaj Yükseklikleri\n<br>1. Kutuları belirtilen veya Mühendis tarafından onaylanmış şekilde monte edin.\n<br>2. Montaj yüksekliği gösterilmemiştir veya belirtilmemişse talimatları alın.\n<br>3. Benzer ekipman kutuları: Aynı veya benzeri alanlardaki üniform yüksekliğe monte edin.\n<br>C Sabitleme\n<br>1. Çıkış kutularını sıkıca sabitleyin.\n<br>2. Maruz kalan çıkış kutularını kalıcı ek parçalara veya makine vidalı kurşun<br><b><i>3.2 ANAHTARLARIN KURULUMU</i>\n</b><br>A. Aydınlatma anahtarları, kapının yakınında:\n<br>1. Kapının grev tarafında bulunur.\n<br>2. Plakalar dört kenarı da bitmiş duvar ile sürekli temas halinde monte edilecektir.\n<br>3. Plakalar 1.5 mm'lik bir hizalama toleransı ile kurulmalıdır.\n<br>4. Tüm anahtar montaj ızgarası plakaları, topraklama terminalleri, yalıtılmış 2,5 sq.mm koruyucu iletken ile anahtar kutusuna bağlı toprak terminaline bağlanmalıdır.\n<br>3.3 İŞLEYİCİ, KAMYON VE TERMİNAL KUTULARIN KURULUMU\n<br>A. Genel\n<br>1. Kabloların ve kabloların çekilmesi için olan tesisler ve gelecekteki cihazların bağlantısı için, bağlantı yeri, çekme ve terminal kutularını belirtilen yerlerde ve gerekirse sabitleyin.\n<br>2. Kutuları olabildiğince göze çarpmayan yerlere yerleştirin, ancak iş tamamlandıktan sonra erişilebilir hale getirin.\n<br>B. Çekme Kutuları\n<br>1. Maksimum 10 m aralıkla sabitleyin ve kanaldaki kıvrım sayısını iki 90 ° 'den fazla olmayacak şekilde sınırlandırın.\n<br><b><i>3.4 TEST\n<br></i></b>A. Tüm anahtarları, soket çıkışlarını vs. İletkenlerin polaritesini ve sürekliliğini sınamak ve Mühendisin tüm memnuniyetini ölçmek için test edin.\n<br>B. Mühendisin tüm memnuniyetini sağlayacak şekilde onaylanmış bir topraklama loop empedans test cihazı ile tüm anahtarlarda ve prizdeki toprak loop empedans testlerine canlı faz uygulayın. Tüm cihaz plakalarının, koruyucu iletken sisteme tatminkar toprak sürekliliğine sahip olduğundan emin olun.\n<br>\n<br>BÖLÜMÜN SONU<br></p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-like mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quaerat quo, animi iste labore explicabo.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-like mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat aut officia in asperiores iure deserunt.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab2\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-change-style mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-if=\"showTitles\" mbr-theme-style=\"display-7\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ut repellendus eius alias pariatur.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-change-style mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci esse odio quidem, eius omnis vel alias.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-change-style mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eius perferendis est similique. Sit sapiente.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-change-style mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita consequuntur ipsam reprehenderit quia.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab3\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-clock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ad adipisci amet nam delectus, eveniet nemo.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-clock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam expedita fugiat numquam placeat sint doloribus.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-clock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia consectetur quae natus cum, earum eligendi.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-clock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ratione, inventore in vero beatae, molestias.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab4\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-file mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nesciunt deserunt earum quidem omnis.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-file mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia commodi architecto alias perferendis porro.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-file mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tempora a, possimus magnam, numquam.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-file mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur aut vero voluptate culpa labore explicabo.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab5\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-cash mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum perferendis quidem asperiores neque.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-cash mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, cum. Quo culpa reprehenderit distinctio, ipsum.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-cash mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quam vero eligendi, vitae, blanditiis, aliquam.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-cash mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa, laudantium. Eaque facere animi fugit.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab6\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-lock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ea, eos, atque labore odit reiciendis sunt.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-lock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nobis sequi ratione quibusdam, laudantium.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-lock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eaque non, illo quas natus mollitia. Sint sunt.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-lock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-if=\"showTitles\" mbr-theme-style=\"display-7\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error saepe a fugit ea dolore beatae recusandae odio.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "tabs2-a",
+          "_isUserblock": true,
+          "_cid": "qD1s6lt2Ew",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "tabs2",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "font-weight": "bold",
+              "color": "#232323",
+              "margin-bottom": "2.5rem"
+            },
+            ".mbr-section-subtitle": {
+              "font-weight": "500",
+              "margin-bottom": "2rem"
+            },
+            ".mbr-element-title": {
+              "margin-bottom": "1rem"
+            },
+            ".card-img": {
+              "margin-top": "1.5rem",
+              "margin-bottom": "1.5rem",
+              "span": {
+                "font-size": "(@iconSize * 1px)"
+              }
+            },
+            ".nav": {
+              "border": "none",
+              "margin-bottom": "3rem"
+            },
+            ".nav-tabs": {
+              "margin-top": "1rem",
+              "margin-bottom": "2rem",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".tabcont": {
+              "z-index": "1",
+              "margin": "0"
+            },
+            ".nav-item": {
+              "margin-top": "1rem"
+            },
+            ".tab-content-row": {
+              "width": "100%",
+              "justify-content": "center",
+              "margin": "0"
+            },
+            ".tab-content": {
+              "width": "100%"
+            },
+            ".tab-elem": {
+              "flex-basis": "auto !important"
+            },
+            ".nav-tabs .nav-link": {
+              "box-sizing": "border-box",
+              "font-style": "normal",
+              "font-weight": "bold",
+              "padding": "1rem 1rem",
+              "margin": "0px",
+              "margin-left": "-0.5px",
+              "margin-right": "-0.5px",
+              "transition": "all .5s",
+              "border-bottom-left-radius": "0px !important",
+              "border-bottom-right-radius": "0px !important",
+              "border-top-left-radius": "5px !important",
+              "border-top-right-radius": "5px !important",
+              "border-bottom": "1px solid @tabsColor",
+              "&:hover": {
+                "border-color": "transparent",
+                "border-bottom": "1px solid @tabsColor"
+              },
+              "&.active": {
+                "border": "1px solid @tabsColor",
+                "border-bottom": "none",
+                "font-style": "normal",
+                "background-color": "transparent"
+              }
+            },
+            ".mbr-section-text": {
+              "text-align": "left"
+            }
+          },
+          "_customHTML": "<section class=\"tabs2\" group=\"Accordion & Toggles & Tabs\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showHeader\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <input type=\"range\" inline title=\"Icon Size\" name=\"iconSize\" min=\"20\" max=\"100\" step=\"2\" value=\"80\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Show Titles\" name=\"showTitles\" checked>\n        <input type=\"color\" title=\"Tabs Color\" name=\"tabsColor\" value=\"#767676\">\n        <!-- <input type=\"color\" title=\"Active Tab Color\" name=\"activeTabColor\" value=\"#ffffff\"> -->\n        <select title=\"Tabs Count\" name=\"tabsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <select title=\"Columns in Tabs\" name=\"columnsCount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/01.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=l8UXhtqV6hU\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showHeader\" data-app-selector=\".mbr-section-title\">Dusit Thani Şartnameler</h2>\n        <h3 class=\"mbr-section-subtitle  display-5 align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPICISING ELIT.<br>\n        </h3>\n    </div>\n    <div class=\"media-container-row\">    \n        <div class=\"row tabcont\">\n                <ul class=\"nav nav-tabs\" role=\"tablist\">\n                    <li class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab1\" aria-expanded=\"true\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">SORTIE</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 1\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab2\" aria-expanded=\"false\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">OUR PRINCIPLES</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 2\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab3\" aria-expanded=\"false\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">FIRM PROFILE</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 3\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab4\" aria-expanded=\"false\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">HOW WE WORK</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 4\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab5\" aria-expanded=\"true\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">MAKE A PAYMENT</h4>\n                        </a>\n                    </li>\n                    <li mbr-if=\"tabsCount > 5\" class=\"nav-item\">\n                        <a class=\"nav-link mbr-fonts-style active\" role=\"tab\" data-toggle=\"tab\" href=\"#tab6\" aria-expanded=\"true\">\n                            <h4 class=\"mbr-fonts-style tab-header\" mbr-theme-style=\"display-7\" data-app-selector=\".tab-header\">OUR WARRANTY</h4>\n                        </a>\n                    </li>\n                </ul>\n        </div>\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row px-1 justify-content-center\">\n            <div class=\"tab-content\">\n                <div id=\"tab1\" class=\"tab-pane in active mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-like mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">SECTION 26 05 10\n<br>\n<br>Basic Materials and Methods For Electrical Installation\n<br>PART 1\tGENERAL \n<br>A.\tIn this specification, General properties for Materials used in the construction of installations of Standards and conditions for the construction, manufacture, installation and testing of low / weak current installations to be installed inside and outside the building are explained.\n<br>B.\tOutlet : a point on a wiring system at which current is taken to supply electric devices. Its shows as a “sorti” in boq pages.\n<br>\n<br>PART 2\t  PRODUCT\n<br>2.1\tOUTLET DEFINITIONS:\n<br>A.\tAll lighting and socket outlets will be safety lined.\n<br>B.\tInside the apartment, cable installation should be at least 2.5 mm2 H07Z-U will be made according to the projects show drawings and panel schedules. There is no maximum size for outlets. (T.C. ÇEVRE ve ŞEHİRCİLİK BAKANLIĞI outlet definitions will not apply.)\n<br>C.\tOutlets cables shall be provided with NHXMH type with a cross section of at least 2.5 mm2, There is no maximum size for outlets. (T.C. ÇEVRE ve ŞEHİRCİLİK BAKANLIĞI outlet definitions will not apply.) Halogen free pipes to be used for outlets And accessories are included in the outlets unit prices. \n<br>D.\tSwitches and sockets shall not be in the definition of outlets, they shall also be priced. \n<br>E.\t1.5mm² cable will not be used in lighting outlets. The minimum cross section is 2.5mm².\n<br>2.2\tNORMAL LIGHTING OUTLETS:\n<br>A.\tControlled by normal (one gang one way) switch. All the conduits, cables, accessories and workmanship are inculeded from the electrical panel board to swich and first lighting fixtures if more then one lighting fixtures included in one normal outlets; all others shall be priced as a parallel outlets.\n<br>2.3\tCOMMUTATOR LIGHTING SORTING:\n<br>2.4\tControlled by commutator (one gang one way) switch. All the conduits, cables, accessories and workmanship are inculeded from the electrical panel board to swich and first two lighting fixtures if more then two lighting fixtures included in one commutator outlets; all others shall be priced as a parallel outlets.\n<br>2.5\tVAEVIEN LIGHTING SORTING: \n<br>A.\tIn the lighting sortings controlled by Vaevien switches; Pipes, cables, accessories and workmanship, from panels to switches and from key to first armatüre And other sorties will be accepted as parallel illumination sort. \n<br>2.6\tMANUAL DIMMER SORT: \n<br>A.\tIn the lighting sort controlled by manual dimmer; from the clipboard Pipe, cable, accessories and workmanship to be made from the key and key to the first armatüre Dimmer lighting sorting, other sorting will be accepted as parallel lighting sorting. \n<br>2.7\tLIGHTING SORT CONTROLLED BY PULSE CURRENT SWITCH: \n<br>A.\tThe first board and panel board Pipe, cable, accessories and workmanship pulse current switch lighting sorting to be done to buttons, other Sorties will be accepted as parallel lighting sort. Pulse current shaver panoda It will be priced. \n<br>2.8\tKeyless normal lighting sorting:\n<br>A.\tIn the lighting sorting controlled by the paneling; from the clipboard Pipe, cable, accessory and workmanship keyless lighting sort to be done as the first armature, other Sorties will be accepted as parallel lighting sort.\n<br>2.9\tSOCKETS SORTIE\n<br>A.\tThe socket outlets shall be made with at least 3x2.5 mm2 cables through the pipe.\n<br>B.\tSwitches and outlets shall not be in the definition of sorties, they shall also be priced.\n<br>C.\tIf the receptacle is ordered from the cable shelf up to the first prize, at least 3x2.5 mm2 cables Installation will be made through the pipe up to the prize and at the cable shelf outlet. At subsequent parallel sockets The sorti lines through the pipe shall be made with cables at least 3x2.5 mm2. Parallel socket outlet socket Behind, non-flammable bucket, screwless plug-in type terminal blocks and all Accessories will be included. \n<br>D.\tEach single-phase sockets, supply cables, pipes and accessories, workmanship and so on. A security line socket Sorting will be accepted. The outlets will not be evaluated in the sortie definition, It will be priced. Multiple sockets in the same case or sockets on the desk block\n<br>E.\tIt will be considered as all socket sorting in the boq. All outlet sorts in the same group will be counted as one. Ex : twin socket , triple socket, universal socket etc. \n<br><b><i>PART 3\t     EXECUTION\n<br>3.1\tINSTALLATION OF OUTLET BOXES\n</i></b><br>A.\tLocation of Boxes \n<br>1.\tDetermine exact location of boxes on site and obtain the Engineer's approval before commencing installation.\n<br>2.\tMake allowance for overhead pipes, ducts, variations in arrangement, thickness of finish, window trim, panelling and other construction while locating boxes.\n<br>B.\tMounting Heights\n<br>1.\tMount boxes as indicated or as approved by the Engineer.\n<br>2.\tWhere mounting height is not shown or specified, obtain instructions.\n<br>3.\tBoxes for similar equipment : mount at uniform heights within same or similar areas.\n<br>C.\tFixing\n<br>1.\tFix outlet boxes securely.\n<br>2.\tFix exposed outlet boxes to permanent inserts or lead anchors with machine screws. .<br><b><i>3.2\tINSTALLATION OF SWITCHES\n</i><br></b>A.\tLighting switches near door:\n<br>1.\tLocated at the strike side of the door.\n<br>2.\tPlates shall be installed with all four edges in continuous contact with finished wall.\n<br>3.\tPlates shall be installed with an alignment tolerance of 1.5mm.\n<br>4.\tAll switch assembly grid plates shall have their earthing terminal connected to the earth terminal attached to the switch box by an insulated 2.5 sq.mm protective conductor.\n<br>3.3\tINSTALLATION OF JUNCTION, PULL AND TERMINAL BOXES\n<br>A.\tGenerally\n<br>1.\tFix junction, pull and terminal boxes where indicated and where required to facilities pulling of wires and cables and connection of future appliances.\n<br>2.\tLocate boxes as inconspicuously as possible, but accessible after work is completed.\n<br>B.\tPull Boxes\n<br>1.\tFix at maximum 10m spacing and to limit the number of bends in conduit to not be more than two 90°.\n<br><b><i>3.4\tTESTING\n</i></b><br>A.\tTest all switches, socket outlets etc. for correct polarity and continuity of conductors in the presence of and to the entire satisfaction of the Engineer.\n<br>B.\tCarry out live phase to earth loop impedance tests at all switches and socket outlets with an approved earth loop impedance tester to the entire satisfaction of the Engineer. Ensure that all device plate have satisfactory earth continuity to the protective conductor system.\n<br>\n<br>END OF SECTION&nbsp;<br></p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-like mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">BÖLÜM 26 05 10\n<br>\n<br>Elektrik Tesisatında Temel Malzemeler ve Yöntemler\n<br>BÖLÜM 1 GENEL\n<br>A. Bu şartnamede, Standartların kurulumunun yapımında kullanılan Malzemelerin Genel Özellikleri ve binanın içinde ve dışında kurulacak düşük / zayıf akım tesisatlarının yapımı, imalatı, kurulumu ve test koşulları açıklanmaktadır.\n<br>B. Outlet: elektrik tesisatlarını beslemek için akımın alındığı bir kablolama sistemi üzerindeki bir nokta. Boq sayfalarında \"sorti\" olarak gösterileri.\n<br>\n<br>BÖLÜM 2 ÜRÜN\n<br>2.1 ÇIKIŞ TANIMLARI:\n<br>C. Bütün aydınlatma ve prizler emniyetli olacaktır.\n<br>B. Daire içerisinde, kablo döşenmesi en az 2.5 mm2 olmalıdır. H07Z-U, projelere göre çizimleri ve pano çizelgelerini gösterecek şekilde yapılacaktır. Satış mağazaları için maksimum boyut yoktur. (Ç.Ç. ÇEVRE ve ŞEHİRCİLİK BAKANLIĞI çıkış tanımları geçerli değildir.)\n<br>C. Çıkış kabloları, en az 2.5 mm2 kesit alana sahip NHXMH tipi ile donatılmalıdır, Çıkışlar için maksimum boyut yoktur. (T.C. ÇEVRE ve ŞEHİRCİLİK BAKANLIĞI çıkış tanımlamaları geçerli olmayacaktır.) Çıkışlar için kullanılacak halojensiz borular ve aksesuar satış birim fiyatlarına dahildir.\n<br>D. Anahtarlar ve prizler prizlerin tanımında olmayacak, ayrıca fiyatlandırılacaktır.\n<br>Aydınlatma çıkışlarında E. 1.5mm² kablo kullanılamaz. Minimum kesit 2.5mm²'dir.\n<br>2.2 NORMAL AYDINLATMA AÇIKLAMALARI:\n<br>A. normal (bir çete tek yönlü) anahtarı ile kontrol edilir. Tüm prizler, kablolar, aksesuarlar ve işçilik elektrikli pano tahtasından bir normal çıkışa birden fazla aydınlatma armatürü takılıysa swich ve ilk aydınlatma armatürlerine konulmuştur; diğerlerinin hepsi paralel çıkış olarak fiyatlandırılacaktır.\n<br>2.3 KOMÜTATÖR AYDINLATMA SIRALAMASI:\n<br>2.4 Komütatör tarafından kontrol edilir (bir çete tek yönlü) anahtarı. Tüm elektrik hatları, kablolar, aksesuarlar ve işçilik, bir komütatör çıkışında birden fazla aydınlatma armatürü varsa elektrik panosundan swich'e ve ilk iki aydınlatma armatürüne konulmuştur; diğerlerinin hepsi paralel çıkış olarak fiyatlandırılacaktır.\n<br>2.5 VAEVIEN AYDINLATMA SIRALAMASI:\n<br>A. Vaevien anahtarları tarafından kontrol edilen aydınlatma sınıflandırmalarında; Borular, kablolar, aksesuarlar ve işçilik, panolardan anahtarlara ve anahtardan ilk armatüre ve diğer sıralamalardan paralel aydınlatma sınıfı olarak kabul edilecek.\n<br>2.6 MANUEL DIMMER SIRALAMA:\n<br>A. Manuel dimmer ile kontrol edilen aydınlatma sınıfında; panodan Boru, kablo, aksesuar ve işçiliğin anahtar ve anahtarlardan ilk armatüre yapılması Dimmer aydınlatma sıralama, diğer sıralama paralel aydınlatma sıralama olarak kabul edilecek.\n<br>2.7 PULSE CURRENT SWITCH İLE AYDINLATMA SIRASI KONTROL EDİLMİŞTİR:\n<br>A. İlk kurul ve panel tahtası Boru, kablo, aksesuarlar ve işçilik darbeli akım şalteri aydınlatma düğmelerine yapılacak sıralama, diğer Sorties paralel aydınlatma tipi olarak kabul edilecektir. Darbeli tıraş panosu Fiyatlandırılacaktır.\n<br>2.8 Anahtarsız normal aydınlatma sıralama:\n<br>Panelleme ile kontrol edilen aydınlatma sınıflandırmasında; panodan Boru, kablo, aksesuar ve işçiliğin anahtarsız aydınlatma türü olarak ilk armatür olarak yapılacak, diğer Sorties paralel aydınlatma türü olarak kabul edilecek.\n<br>2.9 SOKETLER SORU\n<br>A. Soket çıkışları borudan en az 3x2.5 mm2 kablo ile yapılacaktır.\n<br>B. Anahtarlar ve çıkışlar sortiler tanımında olmaz, fiyatlandırılacaktır.\n<br>C. Kablo, kablo rafından birinciye kadar sipariş ediliyorsa, en az 3x2.5 mm2 kablo Kablo rafı prizine kadar borudan monte edilecektir. Sonraki paralel soketlerde Boru içinden geçen hatlar en az 3x2.5 mm2 kablo ile yapılacaktır. Paralel soket çıkış soketi Yanıcı olmayan yanıcı kova, vidasız soketli tip klemensler ve tüm Aksesuarlar dahil edilecektir.\n<br>D. Her bir tek fazlı priz, besleme kabloları, boru ve aksesuarları, işçilik vb. Bir güvenlik hattı yuvası Sıralama kabul edilecektir. Çıkışlar sorti tanımında değerlendirilmeyecektir, fiyatlandırılacaktır. Aynı kutudaki çoklu soketler veya masa bloğundaki soketler\n<br>E. Boq'da tüm soket sıralaması olarak kabul edilecektir. Aynı gruptaki tüm çıkış çeşitleri biri olarak sayılır. Ör: ikiz soket, üçlü soket, üniversal soket vs.\n<br>BÖLÜM 3 İCRA\n<br>3.1 ÇIKIŞ KUTULARININ KURULUMU\n<br>A. Kutuların Konumu\n<br>1. Yerinde kutuların tam yerini belirleyin ve kurulum başlamadan önce Mühendis onaylayın.\n<br>2. Kutuları yerleştirirken havai borular, kanallar, düzenleme değişiklikleri, finiş kalınlığı, pencere döşeme, panelleme ve diğer konstrüksiyon için izin verin.\n<br>B. Montaj Yükseklikleri\n<br>1. Kutuları belirtilen veya Mühendis tarafından onaylanmış şekilde monte edin.\n<br>2. Montaj yüksekliği gösterilmemiştir veya belirtilmemişse talimatları alın.\n<br>3. Benzer ekipman kutuları: Aynı veya benzeri alanlardaki üniform yüksekliğe monte edin.\n<br>C Sabitleme\n<br>1. Çıkış kutularını sıkıca sabitleyin.\n<br>2. Maruz kalan çıkış kutularını kalıcı ek parçalara veya makine vidalı kurşun<br><b><i>3.2 ANAHTARLARIN KURULUMU</i>\n</b><br>A. Aydınlatma anahtarları, kapının yakınında:\n<br>1. Kapının grev tarafında bulunur.\n<br>2. Plakalar dört kenarı da bitmiş duvar ile sürekli temas halinde monte edilecektir.\n<br>3. Plakalar 1.5 mm'lik bir hizalama toleransı ile kurulmalıdır.\n<br>4. Tüm anahtar montaj ızgarası plakaları, topraklama terminalleri, yalıtılmış 2,5 sq.mm koruyucu iletken ile anahtar kutusuna bağlı toprak terminaline bağlanmalıdır.\n<br>3.3 İŞLEYİCİ, KAMYON VE TERMİNAL KUTULARIN KURULUMU\n<br>A. Genel\n<br>1. Kabloların ve kabloların çekilmesi için olan tesisler ve gelecekteki cihazların bağlantısı için, bağlantı yeri, çekme ve terminal kutularını belirtilen yerlerde ve gerekirse sabitleyin.\n<br>2. Kutuları olabildiğince göze çarpmayan yerlere yerleştirin, ancak iş tamamlandıktan sonra erişilebilir hale getirin.\n<br>B. Çekme Kutuları\n<br>1. Maksimum 10 m aralıkla sabitleyin ve kanaldaki kıvrım sayısını iki 90 ° 'den fazla olmayacak şekilde sınırlandırın.\n<br><b><i>3.4 TEST\n<br></i></b>A. Tüm anahtarları, soket çıkışlarını vs. İletkenlerin polaritesini ve sürekliliğini sınamak ve Mühendisin tüm memnuniyetini ölçmek için test edin.\n<br>B. Mühendisin tüm memnuniyetini sağlayacak şekilde onaylanmış bir topraklama loop empedans test cihazı ile tüm anahtarlarda ve prizdeki toprak loop empedans testlerine canlı faz uygulayın. Tüm cihaz plakalarının, koruyucu iletken sisteme tatminkar toprak sürekliliğine sahip olduğundan emin olun.\n<br>\n<br>BÖLÜMÜN SONU<br></p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-like mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quaerat quo, animi iste labore explicabo.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-like mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fugiat aut officia in asperiores iure deserunt.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab2\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-change-style mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-if=\"showTitles\" mbr-theme-style=\"display-7\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ut repellendus eius alias pariatur.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-change-style mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci esse odio quidem, eius omnis vel alias.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-change-style mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eius perferendis est similique. Sit sapiente.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-change-style mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id expedita consequuntur ipsam reprehenderit quia.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab3\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-clock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ad adipisci amet nam delectus, eveniet nemo.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-clock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam expedita fugiat numquam placeat sint doloribus.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-clock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia consectetur quae natus cum, earum eligendi.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-clock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ratione, inventore in vero beatae, molestias.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab4\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-file mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-text\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nesciunt deserunt earum quidem omnis.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-file mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia commodi architecto alias perferendis porro.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-file mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tempora a, possimus magnam, numquam.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-file mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur aut vero voluptate culpa labore explicabo.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab5\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-cash mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam earum perferendis quidem asperiores neque.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-cash mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, cum. Quo culpa reprehenderit distinctio, ipsum.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-cash mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quam vero eligendi, vitae, blanditiis, aliquam.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-cash mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa, laudantium. Eaque facere animi fugit.</p>\n                        </div>\n                    </div>\n                </div>\n\n                <div id=\"tab6\" class=\"tab-pane  mbr-table\" role=\"tabpanel\">\n                    <div class=\"row tab-content-row\">\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-lock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ea, eos, atque labore odit reiciendis sunt.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 1\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-lock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nobis sequi ratione quibusdam, laudantium.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 2\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-lock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitles\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eaque non, illo quas natus mollitia. Sint sunt.</p>\n                        </div>\n\n                        <div class=\"col-xs-12 col-md-6 tab-elem\" mbr-class=\"{'col-lg-3': columnsCount == '4','col-lg-4': columnsCount == '3'}\" mbr-if=\"columnsCount > 3\">\n                            <div class=\"card-img \" mbr-if=\"showIcons\">\n                                <span mbr-icon class=\"mbri-lock mbr-iconfont\"></span>\n                            </div>\n                            <h4 class=\"mbr-element-title  align-center mbr-fonts-style pb-2\" mbr-if=\"showTitles\" mbr-theme-style=\"display-7\">LOREM IPSUM</h4>\n                            <p class=\"mbr-section-text  align-center mbr-fonts-style\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error saepe a fugit ea dolore beatae recusandae odio.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "tabs2-6",
+          "_isUserblock": true,
+          "_cid": "qD1lj3EqNN",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".content": {
+              "@media (max-width: 767px)": {
+                "text-align": "center",
+                "> div:not(:last-child)": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            },
+            ".img-logo": {
+              "img": {
+                "height": "6rem"
+              }
+            },
+            ".block .form-control": {
+              "padding": "1.07em 1.07em"
+            },
+            ".input": {
+              "margin-bottom": "1rem"
+            },
+            "[type=\"email\"]": {
+              "font-size": ".75rem",
+              "margin-bottom": "5px",
+              "text-align": "center",
+              "min-width": "150px"
+            },
+            ".input-group-btn": {
+              "display": "inline-block",
+              "a.btn": {
+                "margin": "0 !important"
+              }
+            },
+            ".input-group": {
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap",
+              "justify-content": "center"
+            },
+            "[type=\"submit\"]": {
+              "padding": ".75rem 1.5625rem !important",
+              "text-transform": "none"
+            },
+            ".social-list": {
+              "padding-left": "0",
+              "margin-bottom": "0",
+              "list-style": "none",
+              "display": "flex",
+              "flex-wrap": "wrap",
+              ".mbr-iconfont-social": {
+                "font-size": "1.3rem",
+                "color": "#fff"
+              },
+              ".soc-item": {
+                "margin": "0 .5rem"
+              },
+              "a": {
+                "margin": "0",
+                "opacity": ".5",
+                "-webkit-transition": ".2s linear",
+                "transition": ".2s linear",
+                "&:hover": {
+                  "opacity": "1"
+                }
+              },
+              "@media (max-width: 767px)": {
+                "justify-content": "center",
+                "-webkit-justify-content": "center"
+              }
+            },
+            ".footer-lower": {
+              ".copyright": {
+                "@media (max-width: 767px)": {
+                  "margin-bottom": "1rem",
+                  "text-align": "center"
+                }
+              },
+              "hr": {
+                "margin": "1rem 0",
+                "border-color": "#fff",
+                "opacity": ".05"
+              }
+            },
+            "form .input-group input.form-control, form .input-group-btn .btn": {
+              "border-top-right-radius": "3px",
+              "border-bottom-right-radius": "3px",
+              "border-top-left-radius": "3px",
+              "border-bottom-left-radius": "3px"
+            }
+          },
+          "_name": "footer4",
+          "_customHTML": "<section class=\"footer4\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showCopyright\" checked=\"\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background10.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content mbr-white\">\n            <div class=\"col-md-3 col-sm-4\">\n                <div class=\"mb-3 img-logo\">\n                    <a href=\"https://mobirise.com/\">\n                        <img src=\"../_images/logo2.png\" alt=\"Mobirise\">\n                    </a>\n                </div>\n                <p class=\"mb-3 mbr-fonts-style foot-title\" mbr-theme-style=\"display-7\" data-app-selector=\".foot-title\">MOBIRISE</p>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                    <a href=\"#\" class=\"text-white\">About Us</a>\n                    <br><a href=\"#\" class=\"text-white\">Services</a>\n                    <br><a href=\"#\" class=\"text-white\">Selected Work</a>\n                    <br><a href=\"#\" class=\"text-white\">Get In Touch</a>\n                </p>\n            </div>\n            <div class=\"col-md-4 col-sm-8\">\n                <p class=\"mb-4 foot-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".foot-title\">Recent News</p>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\">Footer with solid color background and a contact form, Easily add subscribe and contact forms without any server-side integration.<br>\n                    <br>Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.</p>\n            </div>\n            <div class=\"col-md-4 offset-md-1 col-sm-12\">\n                <p class=\"mb-4 foot-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".foot-title\">Contact Us</p>\n                <div mbr-form=\"\">\n                    <div class=\"form-block\">\n                        <div data-form-alert=\"\" hidden=\"\">Thanks for filling out the form!</div>\n                        <form class=\"block mbr-form\" action=\"\" method=\"post\" name=\"Mobirise Form\">\n                            <div class=\"row\">\n                                <div class=\"col-md-12\" data-for=\"email\">\n                                    <input type=\"text\" class=\"form-control input\" name=\"email\" data-form-field=\"Email\" placeholder=\"Email\" required=\"\">\n                                </div>\n                                <div class=\"col-md-12\" data-for=\"message\">\n                                    <textarea class=\"form-control input\" name=\"message\" rows=\"3\" data-form-field=\"Message\" placeholder=\"Message\" style=\"resize:none\"></textarea>\n                                </div>\n                                <div class=\"col-md-12 align-center input-group-btn\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" style=\"margin-top: 10px;\">\n                                    <a href=\"\" type=\"submit\" class=\"btn btn-primary btn-bgr\">SEND MESSAGE</a>\n                                </div>\n                            </div>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-sm-12 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright > p\">© Copyright 2017 Mobirise - All Rights Reserved</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>\n",
+          "_cid": "qD1pSlN3ay",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "footer4-9"
+        }
+      ]
+    }
+  }
+}
